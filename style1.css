@@ -45,7 +45,8 @@ button{
     margin: 10px;
     font-size: large;
     font-family: var(--font-family1);
-    width: 255px;
+    min-width: 260px;
+    width: max-content;
     font-weight: 800;
     color: black;
     transition: background-color 1s;

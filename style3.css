@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 60vh;
     min-height: fit-content;
     width: fit-content;
     font-family: var(--font-family1);
@@ -38,10 +38,10 @@ body{
 .container2{
     display: flex;
     align-items: center;
-    height: 45vh;
+    height: 60vh;
     min-height: fit-content;
-    width: 1220px;
-    min-width: fit-content;
+    width: fit-content;
+    min-width: 1220px;
     font-family: var(--font-family1);
     background-color: white;
     flex-direction: column;
@@ -181,6 +181,23 @@ input{
 .button1:active{
     background-color: gray;
     color: black;
+}
+footer{
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: smaller;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 60%);
+    font-weight: 200;
+}
+footer a{
+    text-decoration: none;
+    color: hsl(44, 74%, 46%);
+    transition: color 0.5s;
+}
+footer a:hover{
+    color: black;
+    font-weight: 600;
 }
 button{
     background-color: hsl(44, 100%, 58%);

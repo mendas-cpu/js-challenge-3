@@ -13,6 +13,12 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    font-family: var(--font-family1);
+    background-color: var(--background-color);
 }
 .container1{
     display: flex;
@@ -26,7 +32,6 @@ body{
     flex-direction: column;
     border-radius: 18px;
     border: transparent;
-    margin-left: 300px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     margin-bottom: 20px;
 }
@@ -42,7 +47,6 @@ body{
     flex-direction: column;
     border-radius: 18px;
     border: transparent;
-    margin-left: 300px;
     margin-bottom: 40px;
     height: fit-content;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -125,9 +129,9 @@ input{
     height: 30px;
 }
 .head-bar{
+    left: 0;
     display: flex;
     justify-content: space-between;
-    align-content: center;
     align-items: center;
     background-color: black;
     padding-bottom: 0px;

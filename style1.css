@@ -105,6 +105,7 @@ button:hover{
     width: 500px;
     height: 500px;
     margin-left: 150px;
+    object-fit: cover;
 }
 #p1{
     font-size: 13px; 

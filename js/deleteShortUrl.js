@@ -1,6 +1,6 @@
 async function deleteShortUrl(shortUrlId) {
     try {
-        const response = await fetch(`https://your-api-endpoint.com/short-urls/${shortUrlId}`, {
+        const response = await fetch(`https://shorten-url-api.infobrains.club/shorten/${shortUrlId}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

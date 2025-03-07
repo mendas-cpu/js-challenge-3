@@ -1,4 +1,8 @@
 const registerForm = document.getElementById('register-form');
+const switchToLogin = document.getElementById('login1');
+switchToLogin.addEventListener('click', () => {
+    window.location.href = '/index.html';
+});
 
 registerForm.addEventListener('submit', async (e) => {
     e.preventDefault();

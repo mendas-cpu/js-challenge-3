@@ -4,7 +4,7 @@ const getShortUrls = async () => {
     const url = 'https://www.shorten-url-api.infobrains.club/api/private/urls';
     const token = localStorage.getItem('token');
     const page = 1;
-    const limit = 10;
+    const limit = 20;
 
     const response = await fetch(`${url}?page=${page}&limit=${limit}`, {
         method: 'GET',

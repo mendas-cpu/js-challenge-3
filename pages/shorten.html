@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style3.css">
     <title>Shorten</title>
     <script src="../js/private.js"></script>
 </head>
 <body>
-    <a href="/pages/logout.html">Logout</a>
-    <div class="container">
-        <h1>Create a shortcut for your URL</h1>
+    <div class="head-bar">
+    <a href="/pages/shorten.html" id="href1">
+    <div class="header">
+        <img src="../assets/images/link-32.png" id="img1">
+        <h1 id="title1">Recyc-<h1 id="title2">URL</h1></h1>
+    </div></a>
+    <a  href="/pages/logout.html"><button>Logout</button></a></div>
+    <div class="container1">
+        <h1>Let's Start Shortening Your URL Here:</h1>
+        <h1> </h1>
+        
         <form id="shorten-form" method="post">
             <input type="url" name="url" placeholder="Enter your URL" required>
-            <button type="submit">Shorten</button>
+            <button type="submit" class="button1">Shorten</button>
         </form>
         <div id="shorten-result"></div>
     </div>
-    <div class="container">
-        <h1>Your shortened URLs</h1>
+    <div class="container2">
+        <h1>Your shortened URLs  </h1>
+        <p id="p1_">The Limit is...Unlimited</p>
         <div id="shorten-list"></div>
     </div>
     <script src="../js/createShortUrl.js"></script>
     <script src="../js/getShortUrls.js"></script>
+    <script src="../js/deleteShortUrl.js"></script>
 </body>
 </html>

@@ -28,24 +28,33 @@ body{
 }
 input{
     padding: 10px;
-    border: thin solid black;
+    border: 1px solid black;
     border-radius: 6px;
     margin: 10px;
     font-size: large;
     font-family: var(--font-family1);
-}
-button{
-    background-color: hsl(44, 74%, 46%);
+    background-color: hsl(0, 0%, 100%);
 }
 
+
 button{
+    background-color: hsl(44, 100%, 58%);
     padding: 10px;
-    border: thin solid black;
+    border: transparent;
     border-radius: 6px;
     margin: 10px;
     font-size: large;
     font-family: var(--font-family1);
     width: 255px;
+    font-weight: 800;
+    color: black;
+    transition: background-color 1s;
+    transition: color 0.5s;
+    }
+button:hover{
+    background-color: hsl(44, 100%, 0%);
+    color: white;
+    cursor: pointer;
 }
 .main{
     display: flex;
@@ -95,6 +104,7 @@ button{
 #img2{
     width: 500px;
     height: 500px;
+    margin-left: 150px;
 }
 #p1{
     font-size: 13px; 
@@ -113,9 +123,24 @@ a:hover{
     color: hsl(0, 0%, 20%);
     cursor: pointer;
 }
+
 .login{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+#p2{
+    font-size: 13px; 
+    font-weight: 200;
+    color: hsl(0, 0%, 40%);
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+#h1_{
+    margin-bottom: 5px;
+}
+form{
+    margin: 60px;
 }

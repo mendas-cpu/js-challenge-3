@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --background-color: hsl(192, 38%, 97%);
+    --font-weight: 400;
+    --font-size: 1.5rem;
+    --font-family1: 'Ubuntu', sans-serif;
+    --font-family2: 'Space Grotesk', sans-serif;
+}
+body{
+    background-color: var(--background-color);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#title1{
+    font-size: larger;
+    font-family: var(--font-family2);
+    color: black;
+    margin: 0 10px;
+    margin-right: 0px;
+}
+#title2{
+    font-size: larger;
+    font-family: var(--font-family2);
+    color: hsl(44, 74%, 46%);
+}
+input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: large;
+    font-family: var(--font-family1);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+button{
+    background-color: hsl(44, 100%, 58%);
+    padding: 10px;
+    border: transparent;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: large;
+    font-family: var(--font-family1);
+    width: 255px;
+    font-weight: 800;
+    color: black;
+    transition: background-color 1s;
+    transition: color 0.5s;
+    }
+button:hover{
+    background-color: hsl(44, 100%, 0%);
+    color: white;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container1{
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+    min-width: 50%;
+    height: fit-content;
+    min-height: 75%;
+    border-radius: 24px;
+    font-family: var(--font-family1);
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.container2{
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+    min-width: 50%;
+    height: fit-content;
+    min-height: 75%;
+    border-radius: 24px;
+    font-family: var(--font-family1);
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.header img{
+    width: 30px;
+    height: 30px;
+}
+.img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin: 10px;
+}
+#img2{
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+}
+#p1{
+    font-size: 13px; 
+    text-align: left;
+    margin-left: 22px;
+    font-weight: 200;
+    color: hsl(0, 0%, 40%);
+    margin-top: 0px;
+}
+a{
+    font-family: var(--font-family1);
+    text-decoration:underline;
+    color: hsl(0, 0%, 40%);
+    font-weight: 900;
+}
+a:hover{
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#p2{
+    font-size: 13px; 
+    font-weight: 200;
+    color: hsl(0, 0%, 40%);
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+#h1_{
+    margin-bottom: 5px;
+}
+form{
+    margin: 60px;
+}

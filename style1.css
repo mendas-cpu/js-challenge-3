@@ -144,3 +144,55 @@ a:hover{
 form{
     margin: 60px;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: hsl(0, 0%, 40%);
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+@media (max-width: 768px) {
+    .container2 {
+        width: 90%;
+        min-width: unset;
+        min-height: unset;
+        padding: 10px;
+    }
+
+    #img2 {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    form {
+        margin: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header img {
+        width: 20px;
+        height: 20px;
+    }
+
+    button {
+        width: 95%;
+    }
+
+    .login {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #p2 {
+        margin-left: 4px;
+
+    }
+}

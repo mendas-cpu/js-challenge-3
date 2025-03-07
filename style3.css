@@ -193,3 +193,60 @@ button{
     transition: color 0.5s;
     margin-bottom: 22px;
 }
+@media (max-width: 1200px) {
+    .container1, .container2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .head-bar a, .head-bar button {
+        margin: 10px 0;
+        font-size: medium;
+        width: 100%;
+        text-align: center;
+    }
+    .container1, .container2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    input {
+        width: 90%;
+        font-size: medium;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .head-bar {
+        padding: 10px;
+    }
+    .head-bar a, .head-bar button {
+        font-size: medium;
+        width: 100%;
+        text-align: center;
+    }
+    .container1, .container2 {
+        padding: 10px;
+    }
+    input {
+        font-size: medium;
+    }
+    button {
+        width: 100%;
+    }
+}

@@ -110,17 +110,17 @@ button:hover{
     float: right;
     margin: 10px;
 }
+.register-form-class{
+    width: 400px;
+}
 #img2{
     width: 500px;
     height: 500px;
     margin-left: 150px;
 }
-#register-button{
-    max-width: 260px;
-}
 #p1{
     font-size: 13px; 
-    text-align: left;
+    text-align: center;
     margin-left: 22px;
     font-weight: 200;
     color: hsl(0, 0%, 40%);
@@ -151,10 +151,12 @@ a:hover{
     margin-left: 10px;
 }
 #h1_{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 31px;
+    font-weight: bolder;
 }
 form{
-    margin: 60px;
+    margin: 60px 40px;
 }
 @media (max-width: 768px) {
     .container1, .container2 {

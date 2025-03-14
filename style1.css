@@ -121,7 +121,7 @@ a{
     text-decoration:underline;
     color: hsl(0, 0%, 40%);
     font-weight: 900;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 a:hover{
     color: hsl(0, 0%, 20%);

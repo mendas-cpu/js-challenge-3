@@ -31,11 +31,11 @@ input{
     border: 1px solid black;
     border-radius: 6px;
     margin: 10px;
+    width: 93%;
     font-size: large;
     font-family: var(--font-family1);
     background-color: hsl(0, 0%, 100%);
 }
-
 
 button{
     background-color: hsl(44, 100%, 58%);
@@ -45,8 +45,7 @@ button{
     margin: 10px;
     font-size: large;
     font-family: var(--font-family1);
-    min-width: 260px;
-    width: max-content;
+    width: 100%;
     font-weight: 800;
     color: black;
     transition: background-color 1s;

@@ -121,6 +121,47 @@ input{
     color: hsl(44, 74%, 46%);
 }
 
+   .modify-moving-gradient{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-size: 300% 100%;
+   }
+   .modify-moving-gradient:hover{
+    transition: 0.5s ease-in-out;
+    background-position: 100% 0px;
+   }
+   .modify-moving-gradient--blue{
+    background-image: linear-gradient(90deg, rgba(17,59,241,1) 44%, rgba(175,0,255,1) 100%);
+   }
+  .btn-moving-gradient {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-size: 300% 100%;
+
+  } 
+   
+  .btn-moving-gradient:hover {
+    transition: 0.5s ease-in-out;
+    background-position: 100% 0px;
+  } 
+   
+  .btn-moving-gradient--pink {
+    
+    background-image: linear-gradient(90deg, rgb(241,39,17) 38%, hsl(25, 100%, 30%) 100%);
+  } 
+#delete-btn{
+    background: rgb(121,37,9);
+    background: linear-gradient(90deg, rgba(121,37,9,1) 38%, rgba(255,106,0,1) 100%); 
+    color: white;
+}
+#delete-btn:hover{
+    background: rgb(255,106,0);
+    background: linear-gradient(90deg, rgba(255,106,0,1) 38%, rgba(121,37,9,1) 100%); 
+}
 input{
     padding: 10px;
     border: 1px solid black;

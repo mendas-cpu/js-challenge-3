@@ -22,7 +22,9 @@ async function modifyShortUrl(shortUrlId, updatedUrl) {
             throw new Error('Network response was not ok');
         }
         const result = await response.json();
-        console.log('URL modified successfully:', result);}
+        return result;
+        console.log('URL modified successfully:', result);
+    }
     catch (error) {
         console.error('There was a problem with the modify operation:', error);
     }

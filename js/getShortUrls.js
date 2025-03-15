@@ -59,7 +59,7 @@ const getShortUrls = async () => {
                     <p><strong>Updated At:</strong> ${new Date(shortUrl.updatedAt).toLocaleString()}</p>
                 </div>
                 <div class="shorten-url__delete">
-                    <button onclick="deleteShortUrl('${shortUrl.id}')" class="btn btn-moving-gradient btn-moving-gradient--pink">Delete</button><button onclick="promptModifyShortUrl('${shortUrl.id}')" class="modify modify-moving-gradient modify-moving-gradient--blue">Modify</button>
+                    <button onclick="deleteShortUrl('${shortUrl.id}')" class="btn btn-moving-gradient btn-moving-gradient--pink">Delete</button><button onclick="promptModifyShortUrl('${shortUrl.id}')" class="modify modify-moving-gradient modify-moving-gradient--blue">Modify<img id="pencil" src="../assets/images/pencil-2-32.png"></button>
                 </div>
                 <div class="modify-prompt" id="modify-prompt-${shortUrl.id}" style="display: none;">
                     <input type="text" id="modify-${shortUrl.id}" placeholder="Enter the new URL" >

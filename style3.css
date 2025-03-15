@@ -144,6 +144,10 @@ input{
 
   } 
    
+#pencil{
+    width: 16px;
+    margin-left: 8px;
+}
   .btn-moving-gradient:hover {
     transition: 0.5s ease-in-out;
     background-position: 100% 0px;

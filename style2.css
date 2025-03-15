@@ -113,6 +113,18 @@ button:hover{
 .register-form-class{
     width: 350px;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: hsl(0, 0%, 40%);
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+footer a{
+    margin-left: 5px;
+}
 #img2{
     width: 500px;
     height: 500px;

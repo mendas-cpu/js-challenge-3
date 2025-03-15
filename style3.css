@@ -19,6 +19,7 @@ body{
 .container {
     font-family: var(--font-family1);
     background-color: var(--background-color);
+    width: 1220px;
 }
 .container1{
     display: flex;
@@ -26,7 +27,7 @@ body{
     align-items: center;
     height: 60vh;
     min-height: fit-content;
-    width: fit-content;
+    width: 100%;
     font-family: var(--font-family1);
     background-color: white;
     flex-direction: column;
@@ -38,10 +39,10 @@ body{
 .container2{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 60vh;
     min-height: fit-content;
-    width: fit-content;
-    min-width: 1220px;
+    width: 100%;
     font-family: var(--font-family1);
     background-color: white;
     flex-direction: column;
@@ -54,15 +55,19 @@ body{
 .shorten-url{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    margin-left: 0px;
+    justify-content: center;
     min-height: fit-content;
     border-radius: 18px;
     border: transparent;
     background-color: hsl(190, 37%, 97%);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    padding: 20px;
-    
+    padding: 10px;
+    min-width: 100%;
+    width: 1100px;
+    margin-bottom: 10px;
+}
+.modify-prompt{
+    display: none;
 }
 li{
     list-style: none;
@@ -76,6 +81,16 @@ li a{
 li a:hover{
     color: black;
 }
+li button{
+    cursor: pointer;
+}
+li button:hover{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+li input{
+    width: 80%;
+}
 #p1_{
     color: hsl(0, 0%, 60%);
     margin-top: 0px;
@@ -87,7 +102,6 @@ li a:hover{
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    margin-left: 0px;
     min-height: fit-content;
     
 }
@@ -106,6 +120,7 @@ input{
     font-family: var(--font-family2);
     color: hsl(44, 74%, 46%);
 }
+
 input{
     padding: 10px;
     border: 1px solid black;
@@ -120,6 +135,17 @@ input{
     align-items: center;
     margin: 20px 10px;
     margin-bottom: 30px;
+}
+#trash{
+    width: 32px;
+    height: 32px;
+}
+#trash:hover{
+    cursor: pointer;
+}
+.delete-img{
+    display: flex;
+    justify-content: space-between;
 }
 #href1{
     text-decoration: none;

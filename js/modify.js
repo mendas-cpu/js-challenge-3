@@ -1,24 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const urlList = document.getElementById('url-list');
-    const modifyForm = document.getElementById('modify-form');
-    const modifyInput = document.getElementById('modify-input');
-    let currentUrlElement = null;
+async function modifyShortUrl(shortUrlId, updatedUrl) {
+    const token = localStorage.getItem('token');
+    const updatedData = { url: updatedUrl };
+    console.log('Modify function triggered for ID:', shortUrlId);
+    console.log('Request body:', updatedData);
+    console.log('Using token:', token);
 
-    urlList.addEventListener('click', (event) => {
-        if (event.target.classList.contains('modify-btn')) {
-            currentUrlElement = event.target.parentElement.querySelector('.url');
-            modifyInput.value = currentUrlElement.textContent;
-            modifyForm.style.display = 'block';
-        }
-    });
+    try {
+        const response = await fetch(`https://www.shorten-url-api.infobrains.club/api/private/urls/${shortUrlId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`,
+            },
+            body: JSON.stringify(updatedData)
+            
 
-    modifyForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        if (currentUrlElement) {
-            currentUrlElement.textContent = modifyInput.value;
-            modifyForm.style.display = 'none';
-            modifyInput.value = '';
-            currentUrlElement = null;
+        });
+        console.log('Data to update:', updatedData)
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
-    });
-});
+        const result = await response.json();
+        console.log('URL modified successfully:', result);}
+    catch (error) {
+        console.error('There was a problem with the modify operation:', error);
+    }
+}

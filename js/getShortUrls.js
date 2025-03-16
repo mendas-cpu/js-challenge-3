@@ -91,10 +91,23 @@ const promptModifyShortUrl = (shortUrlId) => {
         modifyShortUrl(shortUrlId, updatedUrl);
     }
     submitBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        inputUrl.style.display = 'none';
-        promptMod.textContent = "URL modified successfully!";
-        promptMod.style.textAlign = 'center';
+        if(updatedUrl){
+            e.preventDefault();
+            inputUrl.style.display = 'none';
+            promptMod.textContent = "URL modified successfully!";
+            promptMod.style.textAlign = 'center';
+
+            setTimeout(() => {
+                window.location.reload();
+                }, 1000)
+        }else{
+            promptMod.textContent = "Please Enter a Valid URL!";
+            promptMod.style.textAlign = 'center';
+            setTimeout(() => {
+                window.location.reload();
+                }, 2000)
+        }
+        
     });
 };
 
